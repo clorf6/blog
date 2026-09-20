@@ -1,0 +1,33 @@
+/*
+ * 拉丁字体：Nunito 可变字重，只含拉丁子集（38 KB）。
+ *
+ * 为什么需要它：此前的字体栈里没有任何专管拉丁字母的字体，
+ * 在没装苹方/鸿蒙/MiSans 的机器上会一路回退到中文字体，
+ * 英文就用中文字体附带的拉丁字形渲染 —— 字距和字形都偏差，
+ * 这是「英文不好看」的直接原因。
+ *
+ * 中文不打包 webfont：CJK 字体动辄数 MB，会把整站的性能优化抵消掉。
+ * 字体族回退是逐字符生效的，拉丁字母命中 Nunito、汉字自动落到系统中文字体。
+ *
+ * font-display: swap —— 字体没到之前先用回退字体渲染，不产生空白期。
+ */
+@font-face {
+  font-family: 'Nunito Variable';
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url('/lib/fonts/nunito-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Nunito Variable';
+  font-style: italic;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url('/lib/fonts/nunito-latin-italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}

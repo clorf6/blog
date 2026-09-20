@@ -1,0 +1,58 @@
+/*
+ * 柔和的模糊色块背景 —— 纯 CSS 径向渐变，零图片、零请求。
+ *
+ * 替代原先的整页背景图（background.webp 110 KB + darkbg.webp 121 KB）。
+ * 纯色底太单调，但再挂一张大图又和「加载要快」冲突；渐变色块两头都占：
+ * 视觉上有层次，代价只有这几百字节 CSS。
+ *
+ * 用 body::before 是照搬主题原来放背景图的做法（_global/index.styl:18-30），
+ * 层级与定位都是它验证过的。前提是 _config.yun.yml 里 bg_image.enable 为
+ * false —— 否则主题会给同一个伪元素也生成一份规则，两者会打架。
+ *
+ * 底色继续由主题的 --hty-bg-color 提供（亮 #f5f5f5 / 暗 #303030），
+ * 这里只叠色块，所以暗色模式自动跟随、无需重复定义底色。
+ */
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  /* 四团低透明度色块，错落分布在四角，边缘用 transparent 收尾形成弥散感。
+     百分比尺寸让它随视口缩放，不会在宽屏上散开、也不会在手机上糊成一片。 */
+  background-image:
+    radial-gradient(62% 52% at 12% 18%, rgba(0, 120, 231, 0.16), transparent 72%),
+    radial-gradient(52% 46% at 88% 12%, rgba(142, 113, 193, 0.13), transparent 72%),
+    radial-gradient(58% 52% at 78% 88%, rgba(0, 176, 185, 0.12), transparent 72%),
+    radial-gradient(48% 42% at 22% 92%, rgba(255, 149, 110, 0.10), transparent 72%);
+
+  /* 淡入，避免首屏突兀 */
+  animation: hty-bg-fade-in 1.2s ease both;
+}
+
+/* 暗色下把色块调深、透明度略降，避免在深底上显得发灰发脏 */
+html.dark body::before {
+  background-image:
+    radial-gradient(62% 52% at 12% 18%, rgba(0, 120, 231, 0.20), transparent 72%),
+    radial-gradient(52% 46% at 88% 12%, rgba(142, 113, 193, 0.17), transparent 72%),
+    radial-gradient(58% 52% at 78% 88%, rgba(0, 176, 185, 0.14), transparent 72%),
+    radial-gradient(48% 42% at 22% 92%, rgba(255, 149, 110, 0.10), transparent 72%);
+}
+
+@keyframes hty-bg-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 尊重系统的「减少动态效果」设置 */
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
+}

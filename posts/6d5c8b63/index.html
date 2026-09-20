@@ -1,0 +1,365 @@
+<!DOCTYPE html><html lang="zh-CN"><head><!-- hexo injector head_begin start --><link href="/css/hexo-tag-common.css" rel="stylesheet"/><script src="/lib/iconify/iconify-preload.js"></script><!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="clorf"><meta name="copyright" content="clorf"><meta name="generator" content="Hexo 8.1.2"><meta name="theme" content="hexo-theme-yun"><title>The Missing Semester 笔记 | clorf's blog</title><link rel="stylesheet" href="/lib/star-markdown-css/yun-markdown.min.css"><link rel="stylesheet" href="/lib/prism-theme-vars/base.css"><link rel="icon" type="image/png" href="/images/favicon.png"><link rel="mask-icon" href="/images/favicon.png" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/lib/katex/katex.min.css" as="style"><link rel="preload" href="/js/hexo-theme-yun.js" as="script" crossorigin><link rel="prefetch" href="/js/sidebar.js" as="script"><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"blog.clorf.top","root":"/","title":["clorf","的","博","客"],"version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/pagefind/pagefind.js"},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"vendors":{"host":"","darken":"/lib/darken/darken.umd.js"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="alternate" href="/atom.xml" title="clorf's blog" type="application/atom+xml"><link rel="stylesheet" href="/css/fonts.css"><link rel="stylesheet" href="/css/background.css"><link rel="stylesheet" href="/css/tweaks.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/texmath/texmath.css"><meta name="description" content="找点事干">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Missing Semester 笔记">
+<meta property="og:url" content="https://blog.clorf.top/posts/6d5c8b63/index.html">
+<meta property="og:site_name" content="clorf&#39;s blog">
+<meta property="og:description" content="找点事干">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-07-01T15:51:37.000Z">
+<meta property="article:modified_time" content="2026-09-20T16:39:04.230Z">
+<meta property="article:author" content="clorf">
+<meta name="twitter:card" content="summary"><script>(function() {
+  if (CONFIG.mode !== 'auto') return
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script><!-- hexo injector head_end start --><style>
+.pdf-embed{margin:1rem 0}
+.pdf-embed-card{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:center;
+  padding:1.25rem;border:1px dashed var(--hty-text-color,#888);border-radius:.5rem;opacity:.85}
+.pdf-embed-load{cursor:pointer;font:inherit;padding:.45rem 1rem;border-radius:2rem;
+  border:1px solid currentColor;background:transparent;color:inherit;text-decoration:none}
+.pdf-embed-load:hover{opacity:.7}
+.pdf-embed-open{font-size:.9em;text-decoration:underline}
+.pdf-embed-hint{flex-basis:100%;margin:0 0 .25rem;font-size:.9em;opacity:.8}
+.pdf-embed-frame{width:100%;height:min(80vh,900px);border:0;border-radius:.5rem}
+</style><!-- hexo injector head_end end --></head><body><script src="/lib/iconify/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" title="clorf"><img width="96" loading="lazy" src="/images/avatar.webp" alt="clorf"><span class="site-author-status" title="永远相信美好的事情即将发生">💤</span></a><span class="site-name">clorf's blog</span><sub class="site-subtitle"></sub><div class="site-description"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">178</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">3</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><span class="icon iconify" data-icon="ri:rss-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/clorf6" title="GitHub" target="_blank" style="color:#181717"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:2628474577@qq.com" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=368750293" title="网易云音乐" target="_blank" style="color:#C10D0C"><span class="icon iconify" data-icon="ri:netease-cloud-music-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/she-hui-ji-17" title="知乎" target="_blank" style="color:#0084FF"><span class="icon iconify" data-icon="ri:zhihu-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/163937390" title="哔哩哔哩动画" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的好厚米们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#lecture-1%253A-the-shell"><span class="toc-text">Lecture 1: The Shell</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lecture-2%253A-shell-tools-and-scripting"><span class="toc-text">Lecture 2: Shell Tools and Scripting</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article data-pagefind-body class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://blog.clorf.top/posts/6d5c8b63/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="clorf"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="clorf's blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">The Missing Semester 笔记</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <span class="post-meta-icon-text">发表于</span> <time title="创建时间：2023-07-01 15:51:37" itemprop="dateCreated datePublished" datetime="2023-07-01T15:51:37+00:00">2023-07-01</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-2-line"></span></span> <span class="post-meta-icon-text">更新于</span> <time title="修改时间：2026-09-20 16:39:04" itemprop="dateModified" datetime="2026-09-20T16:39:04+00:00">2026-09-20</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><span class="icon iconify" data-icon="ri:file-word-line"></span></span> <span title="本文字数">2.3k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><span class="icon iconify" data-icon="ri:timer-line"></span></span> <span title="阅读时长">9m</span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">课程笔记</span></a></span></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><p>MIT 的 missing-semester 课程学习笔记，学一些常用的计算机工具，总时长大概 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn></mrow><annotation encoding="application/x-tex">11</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">11</span></span></span></span></eq> 个小时，不算太长。</p>
+<h2 id="lecture-1%3A-the-shell" tabindex="-1">Lecture 1: The Shell</h2>
+<p><strong>查询时间</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">date</span> <span class="token comment"># Sat Jul  1 16:38:09 CST 2023</span></code></pre>
+<p><strong>打印</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> hello <span class="token comment"># hello</span></code></pre>
+<p><strong>查询程序地址</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">which</span> <span class="token builtin class-name">echo</span> <span class="token comment"># /usr/bin/echo</span></code></pre>
+<p><strong>查询当前目录</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">pwd</span> <span class="token comment"># /mnt/c/Users/屋顶上的小丑</span></code></pre>
+<p><strong>改变当前目录</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> /xxx <span class="token comment"># 打开 xxx 目录</span>
+<span class="token builtin class-name">cd</span> ./xxx <span class="token comment"># 打开当前目录下的 xxx</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span> <span class="token comment"># 回到父目录</span>
+<span class="token builtin class-name">cd</span> - <span class="token comment"># 回到前一个所在的目录</span>
+<span class="token builtin class-name">cd</span> ~ <span class="token comment"># 打开主目录</span></code></pre>
+<p><strong>查看当前目录文件</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">ls</span> <span class="token comment"># 当前目录下的文件：xxx...</span>
+<span class="token function">ls</span> <span class="token punctuation">..</span> <span class="token comment"># 父目录下的文件：xxx...</span>
+<span class="token function">ls</span> <span class="token parameter variable">-l</span> <span class="token comment"># 给出当前目录下文件的更多信息</span>
+<span class="token comment"># -a 查看所有文件 -h 以人类可以理解的格式输出，例如M和G，-t 以最近访问顺序排序，--color，以彩色文本输出</span></code></pre>
+<p>第一位字符中 <code>d</code> 表示该文件是一个目录。后面九个字符每三个字符为一组，分别代表文件所有者，用户组及其他所有人的权限。三个字符分别为 <code>r</code>，<code>w</code> 和 <code>x</code>，代表读入，写入与执行的权限。对于文件来说很好理解，对于目录来说 <code>r</code> 代表能否查看目录下的文件，<code>w</code> 代表能否重命名，创建和删除目录下的文件，<code>x</code> 代表能否搜索（如果要进入某个目录，需要对路径上的所有目录都有执行权限）。<code>-</code> 代表没有对应的权限。</p>
+<p><strong>查看帮助</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">xxx <span class="token parameter variable">--help</span> <span class="token comment"># 给出 xxx 指令的用法</span></code></pre>
+<p><strong>重命名或移动文件</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">mv</span> xxx yyy <span class="token comment"># 将文件 xxx 重命名为 yyy，或者将文件/目录 xxx 移动到 yyy 目录下</span></code></pre>
+<p><strong>复制文件</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> xxx yyy <span class="token comment"># 将文件 xxx 复制到目录 yyy 下</span></code></pre>
+<p><strong>删除文件</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> xxx <span class="token comment"># 删除文件 xxx</span></code></pre>
+<p><strong>删除目录</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> <span class="token parameter variable">-r</span> xxx <span class="token comment"># 递归删除目录 xxx 及其下面的所有文件</span>
+<span class="token function">rmdir</span> xxx <span class="token comment"># 删除目录 xxx，当且仅当 xxx 为空</span></code></pre>
+<p><strong>创建目录</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> xxx <span class="token comment"># 创建目录 xxx</span></code></pre>
+<p><strong>查询手册</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">man</span> xxx <span class="token comment"># 查询命令 xxx 的手册</span></code></pre>
+<p>可以用 <code>tldr</code> 看更简洁的手册。</p>
+<p><strong>清空命令行</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">ctrl+L <span class="token comment"># 清空命令行</span></code></pre>
+<p><strong>输入输出流</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> xx <span class="token operator">></span> <span class="token function">file</span> <span class="token comment"># 覆盖输出 xx 到文件 file 中（不存在就新建）</span>
+<span class="token builtin class-name">echo</span> xx <span class="token operator">>></span> <span class="token function">file</span> <span class="token comment"># 追加输出 xx 到文件 file 中</span></code></pre>
+<p><strong>输出文件内容</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> <span class="token function">file</span> <span class="token comment"># 输出 file 中的内容</span>
+<span class="token function">cat</span> <span class="token operator">&lt;</span> <span class="token function">file</span> <span class="token comment"># 把 file 中的内容当作输入，由于此时未指定输出，因此默认为控制台，也会把内容输出到命令行中</span>
+<span class="token function">cat</span> <span class="token operator">&lt;</span> <span class="token function">file</span> <span class="token operator">></span> file2 <span class="token comment"># 把 file 中的内容当作输入输出到 file2 中</span></code></pre>
+<p><strong>管道</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token operator">|</span> <span class="token comment"># 将 | 左侧的程序输出作为右侧程序的输入</span>
+<span class="token function">ls</span> <span class="token parameter variable">-l</span> / <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-n1</span> <span class="token comment"># 将 ls -l / 当作输入，并输出最后一行到命令行中</span></code></pre>
+<p><strong>进入 root 模式</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> xxx <span class="token comment"># 以 root 的身份执行 xxx</span>
+<span class="token function">sudo</span> <span class="token function">su</span> <span class="token comment"># 切换用户为 root</span>
+<span class="token builtin class-name">exit</span> <span class="token comment"># root 登出</span></code></pre>
+<p>向 <code>/sys</code> 目录写入内容只有 <code>root</code> 能办到。</p>
+<p><strong>多重定向</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">xxx <span class="token function">tee</span> yyy <span class="token comment"># 把输入 xxx 输出到 yyy 中，同时在屏幕上输出，即同时打印内容和写入文件</span></code></pre>
+<p><strong>创建文件</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">touch</span> xxx <span class="token comment"># 创建文件 xxx</span></code></pre>
+<h2 id="lecture-2%3A-shell-tools-and-scripting" tabindex="-1">Lecture 2: Shell Tools and Scripting</h2>
+<p><strong>变量赋值</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">foo</span><span class="token operator">=</span>bar <span class="token comment"># 把 foo 变量的值赋为 bar，不能有空格</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$foo</span> <span class="token comment"># bar</span></code></pre>
+<p>用 <code>export</code> 可以设置环境变量，全局 shell 有效。</p>
+<p><strong>字符串输出</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">'$foo'</span> <span class="token comment"># 输出 $foo，单引号不转义</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$foo</span>"</span> <span class="token comment"># 输出 bar，双引号转义</span></code></pre>
+<p>相较于 <code>print</code>，<code>echo</code> 会读入字符串里的空格，但 <code>print</code> 读到空格就停止。</p>
+<p><strong>特殊参数</strong></p>
+<ul>
+<li>
+<p><code>$0</code> - 脚本名</p>
+</li>
+<li>
+<p><code>$1</code> 到 <code>$9</code> - 脚本的参数。 <code>$1</code> 是第一个参数，依此类推。</p>
+</li>
+<li>
+<p><code>$@</code> - 所有参数</p>
+</li>
+<li>
+<p><code>$#</code> - 参数个数</p>
+</li>
+<li>
+<p><code>$?</code> - 前一个命令的返回值</p>
+</li>
+<li>
+<p><code>$$</code> - 当前脚本的进程识别码</p>
+</li>
+<li>
+<p><code>!!</code> - 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用 <code>sudo !!</code>再尝试一次。</p>
+</li>
+<li>
+<p><code>$_</code> - 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下 <code>Esc</code> 之后键入 . 来获取这个值。</p>
+</li>
+</ul>
+<p><strong>逻辑运算符</strong></p>
+<p>如果指令正常执行则返回 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></eq>，否则说明有错误发生。<code>true</code> 的返回值一直是 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></eq>，<code>false</code> 的返回值一直是 <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></eq>。以上可以通过 <code>&amp;&amp; </code> 和 <code>||</code> 连接，都是短路运算符。</p>
+<p><strong>命令替换</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">foo</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">pwd</span><span class="token variable">)</span></span> <span class="token comment"># foo 变量存储着 pwd 这个指令，因此通过 $foo 得到的是 pwd 的返回值</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"We are in <span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">pwd</span><span class="token variable">)</span></span>"</span> <span class="token comment"># 会将 pwd 的返回值替换 $(pwd) 再输出</span></code></pre>
+<p><strong>进程替换</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">ls</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">ls</span> <span class="token punctuation">..</span><span class="token punctuation">)</span> <span class="token comment"># 输出是当前目录和父目录下的文件的拼接。因为 &lt;(ls) 会将 ls 的输出存入某个临时文件，然后再用这个临时文件替换掉 &lt;(ls)。</span>
+<span class="token function">diff</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">ls</span> foo<span class="token punctuation">)</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">ls</span> bar<span class="token punctuation">)</span> <span class="token comment"># 显示这 foo 和 bar 两个文件夹的区别</span></code></pre>
+<p><strong>实例</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">"Starting program at <span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span>"</span> <span class="token comment"># date会被替换成日期和时间</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">"Running program <span class="token variable">$0</span> with <span class="token variable">$#</span> arguments with pid <span class="token variable">$$</span>"</span>
+
+<span class="token keyword">for</span> <span class="token for-or-select variable">file</span> <span class="token keyword">in</span> <span class="token string">"<span class="token variable">$@</span>"</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+    <span class="token function">grep</span> foobar <span class="token string">"<span class="token variable">$file</span>"</span> <span class="token operator">></span> /dev/null <span class="token operator"><span class="token file-descriptor important">2</span>></span> /dev/null
+    <span class="token comment"># 如果模式没有找到，则grep退出状态为 1</span>
+    <span class="token comment"># 我们将标准输出流和标准错误流重定向到Null，因为我们并不关心这些信息</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token variable">$?</span> <span class="token parameter variable">-ne</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"File <span class="token variable">$file</span> does not have any foobar, adding one"</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"# foobar"</span> <span class="token operator">>></span> <span class="token string">"<span class="token variable">$file</span>"</span>
+    <span class="token keyword">fi</span>
+<span class="token keyword">done</span></code></pre>
+<p>作用是扫描参数提供的所有文件，如果没找到 <code>foobar</code> 就在文件末尾追加一个。</p>
+<p>其中 <code>2&gt;</code> 为错误输出流，<code>&gt;</code> 为正常输出流，即 <code>strerr</code> 与 <code>stdout</code>，可以将两者结合为 <code>&amp;&gt;</code>。<code>-ne</code> 即不等号</p>
+<p><strong>通配</strong></p>
+<p><code>?</code> 匹配一个字符，<code>*</code> 匹配任意个字符。</p>
+<p><code>{}</code> 会把括号里的内容扩展开。例如 <code>convert a.txt a.in</code> 和 <code>convert a.{txt,in}</code> 是一样的。</p>
+<p><strong>shebang</strong></p>
+<pre class="language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/local/bin/python</span>
+<span class="token comment">#!/usr/local/bin/env python</span>
+<span class="token keyword">import</span> sys
+<span class="token keyword">for</span> arg <span class="token keyword">in</span> <span class="token builtin">reversed</span><span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span></code></pre>
+<p>第一行第二行即为 shebang，代表了 shell 去用这一行路径的东西来运行脚本。第二行使用了 env，即环境变量。</p>
+<p><strong>报错</strong></p>
+<p>要先安装 shellcheck 包。</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">shellcheck</span> xxx.sh <span class="token comment"># 检查 xxx.sh 的错误并报告</span></code></pre>
+<p><strong>查找文件</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 查找所有名称为src的文件夹</span>
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-name</span> src <span class="token parameter variable">-type</span> d
+<span class="token comment"># 查找所有文件夹路径中包含test的python文件</span>
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-path</span> <span class="token string">'*/test/*.py'</span> <span class="token parameter variable">-type</span> f
+<span class="token comment"># 查找前一天修改的所有文件</span>
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-mtime</span> <span class="token parameter variable">-1</span>
+<span class="token comment"># 查找所有大小在500k至10M的tar.gz文件</span>
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-size</span> +500k <span class="token parameter variable">-size</span> <span class="token parameter variable">-10M</span> <span class="token parameter variable">-name</span> <span class="token string">'*.tar.gz'</span>
+<span class="token comment"># 删除全部扩展名为.tmp 的文件</span>
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-name</span> <span class="token string">'*.tmp'</span> <span class="token parameter variable">-exec</span> <span class="token function">rm</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> <span class="token punctuation">\</span><span class="token punctuation">;</span>
+<span class="token comment"># 查找全部的 PNG 文件并将其转换为 JPG</span>
+<span class="token function">find</span> <span class="token builtin class-name">.</span> <span class="token parameter variable">-name</span> <span class="token string">'*.png'</span> <span class="token parameter variable">-exec</span> convert <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>.jpg <span class="token punctuation">\</span><span class="token punctuation">;</span></code></pre>
+<p><code>-empty</code> 可以查找空文件和目录。<code>-mtime</code> 代表文件上次修改的时间，<code>-ctime</code> 代表文件创造的时间，<code>-atime</code> 代表文件上次访问的时间。<code>-print0</code> 会直接将文件名后加 <code>\0</code> 一起输出，默认则是输出一个文件换行再输出。</p>
+<p>可以用 <code>fd</code> 替代，<code>fd PATTERN</code> 代表以 PATTERN 模式搜索。用 <code>locate</code> 能更加高效，因为它依靠索引来查找，类似数据库，但是只能通过文件名查找。</p>
+<p><strong>查找代码</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">grep</span> <span class="token string">"xxx"</span> yyy <span class="token comment"># 查找文件 yyy 中所有包含子串"xxx" 的行并输出，-i 表示不区分大小写，-n 可以打印行数，--color 可以高亮关键字，-C num 代表查找结果上下文 num 行，-v 将结果反选，-R 会递归进入子目录查找所有文件，-c 只输出行数</span></code></pre>
+<p>用 <code>ripgrep(rg)</code> 更加快速。</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 查找所有使用了 requests 库的文件</span>
+rg <span class="token parameter variable">-t</span> py <span class="token string">'import requests'</span>
+<span class="token comment"># 查找所有没有写 shebang 的文件（包含隐藏文件）</span>
+rg <span class="token parameter variable">-u</span> --files-without-match <span class="token string">"^#!"</span>
+<span class="token comment"># 查找所有的foo字符串，并打印其之后的5行</span>
+rg foo <span class="token parameter variable">-A</span> <span class="token number">5</span>
+<span class="token comment"># 打印匹配的统计信息（匹配的行和文件的数量）</span>
+rg <span class="token parameter variable">--stats</span> PATTERN</code></pre>
+<p><strong>查找 shell 命令</strong></p>
+<p><code>history</code> 能输出输入的历史命令。能结合 <code>|</code> 查找特定的命令。用 <code>ctrl+R</code> 也能查找历史，可以配合模糊查找工具 <code>fzf</code> 使用。</p>
+<p><strong>文件夹导航</strong></p>
+<p>用 <code>ls -R</code> 就能递归输出目录内的文件结构，用 <code>tree</code> 或者 <code>broot</code> 能够输出目录树，或者用更完整的文件管理器 <code>nnn</code> 或者 <code>ranger</code>。</p>
+<p>用 <code>fasd</code> 或者 <code>autojump</code> 可以查找最常用或最近使用的文件和目录。</p>
+<p><strong>分支与循环</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> condition <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+	<span class="token comment">#statements</span>
+<span class="token keyword">fi</span>
+
+<span class="token keyword">while</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> condition <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+	<span class="token comment">#statements</span>
+<span class="token keyword">done</span>
+
+<span class="token keyword">until</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> condition <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+	<span class="token comment">#statements</span>
+<span class="token keyword">done</span>
+
+<span class="token keyword">for</span> <span class="token variable"><span class="token punctuation">((</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">))</span></span><span class="token punctuation">;</span> <span class="token keyword">do</span>
+	<span class="token comment">#statements</span>
+<span class="token keyword">done</span></code></pre>
+<p><strong>统计数量</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">wc</span> <span class="token parameter variable">-c</span> <span class="token comment"># 统计字节数</span>
+<span class="token function">wc</span> <span class="token parameter variable">-l</span> <span class="token comment"># 统计行数</span>
+<span class="token function">wc</span> <span class="token parameter variable">-w</span> <span class="token comment"># 统计词数</span>
+<span class="token function">wc</span> <span class="token parameter variable">-m</span> <span class="token comment"># 统计字符数</span></code></pre>
+<p><strong>xargs</strong></p>
+<p><code>xargs</code> 可以将输入分割成批，每个批中有很多分割片段，然后将这些片段按批交给 <code>xargs</code> 后面的命令进行处理。简而言之，它可以将标准输入中的内容作为参数传递。</p>
+<p><code>-d</code> 可以自定义一个分割符，以这个符作为分割成多个命令行参数传递给后面指令。特别的，如果分割符是 <code>null</code>，可以直接用 <code>-0</code>。</p>
+<p><strong>压缩</strong></p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 压缩与解压 .tar 文件</span>
+<span class="token function">tar</span> <span class="token parameter variable">-cvf</span> xxx.tar <span class="token punctuation">..</span>.
+<span class="token function">tar</span> <span class="token parameter variable">-xvf</span> xxx.tar
+<span class="token comment"># 压缩与解压 .gz 文件</span>
+<span class="token function">tar</span> <span class="token parameter variable">-czvf</span> xxx.tar.gz <span class="token punctuation">..</span>.
+<span class="token function">tar</span> <span class="token parameter variable">-xzvd</span> xxx.tar.gz
+<span class="token comment"># 压缩与解压 .bz2 文件</span>
+<span class="token function">tar</span> <span class="token parameter variable">-cjvf</span> xxx.tar.bz2 <span class="token punctuation">..</span>.
+<span class="token function">tar</span> <span class="token parameter variable">-xjvf</span> xxx.tar.bz2 <span class="token punctuation">..</span>.
+<span class="token comment"># 压缩与解压 .zip 文件</span>
+<span class="token function">tar</span> <span class="token parameter variable">-czvf</span> xxx.zip <span class="token punctuation">..</span>.
+<span class="token function">tar</span> <span class="token parameter variable">-xzvf</span> xxx.zip
+<span class="token comment"># 压缩与解压 .rar 文件</span>
+<span class="token function">rar</span> a xxx.rar <span class="token punctuation">..</span>.
+<span class="token function">rar</span> x xxx.rar</code></pre>
+<link rel="stylesheet" href="/lib/katex/katex.min.css">
+<link rel="stylesheet" href="/lib/texmath/texmath.css">
+</div></section><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>clorf</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://blog.clorf.top/posts/6d5c8b63/" title="The Missing Semester 笔记">https://blog.clorf.top/posts/6d5c8b63/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-nc-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul><script>document.addEventListener('copy', function (event) {
+  const clipboardData = event.clipboardData || window.clipboardData;
+  if (!clipboardData) { return; }
+  const text = window.getSelection().toString();
+  if (text) {
+    event.preventDefault();
+    clipboardData.setData('text/plain', text + '\n\n本文作者：clorf\n本文链接：https://blog.clorf.top/posts/6d5c8b63/\n版权声明：本博客所有文章除特别声明外，均默认采用 CC BY-NC-SA 4.0 许可协议。');
+  }
+});</script></article><div data-pagefind-ignore class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/posts/57c5bf13/" rel="next" title="数据结构 Test 2"><span class="post-nav-text">数据结构 Test 2</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"><style>.utterances {
+  max-width: 100%;
+}</style><script src="https://giscus.app/client.js" data-repo="clorf6/blog" data-repo-id="R_kgDOHseueQ" data-category="Announcements" data-category-id="DIC_kwDOHseuec4DE890" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-theme="preferred_color_scheme" crossorigin="anonymous" async></script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2022 – 2026 </span><a class="with-love" id="animate" href="https://blog.clorf.top"><span class="icon iconify" data-icon="ri:cloud-line"></span></a><span class="author"> clorf</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v8.1.2</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div><div class="live-time"><span>本博客已运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2022-07-21T00:00:00');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = ` ${passDay} 天 ${passHour} 小时 ${passMinute} 分 ${passSecond} 秒`;
+}
+blog_live_time();
+</script></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:search-line"></span></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script src="/lib/noop.js"></script><script src="/js/search/local-search.js" defer type="module"></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><span class="icon iconify" data-icon="ri:close-line"></span></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div class="search-result-container"></div></div><script>function initMourn() {
+  const date = new Date();
+  const today = (date.getMonth() + 1) + "-" + date.getDate()
+  const mourn_days = ["4-4","9-18","12-13"]
+  if (mourn_days.includes(today)) {
+    document.documentElement.style.filter = "grayscale(1)";
+  }
+}
+initMourn();</script><script src="/lib/medium-zoom/medium-zoom.min.js"></script><script>const images = [...document.querySelectorAll('.markdown-body img')]
+mediumZoom(images)</script><style>.medium-zoom-image {
+  z-index: 99;
+}</style><!-- hexo injector body_end start --><script src="/js/hexo-tag-common.js"></script><script>
+(function () {
+  function rehydrate() {
+    var u = window.Yun && window.Yun.utils;
+    try { if (u && u.insertCopyCodeBtn) u.insertCopyCodeBtn(); } catch (e) {}
+    try { if (u && u.wrapTable) u.wrapTable(); } catch (e) {}
+    try {
+      if (window.mediumZoom) {
+        var imgs = document.querySelectorAll('.markdown-body img:not(.medium-zoom-image)');
+        if (imgs.length) window.mediumZoom(Array.prototype.slice.call(imgs));
+      }
+    } catch (e) {}
+    // {% tabs %} 卡片：hexo-tag-common 把 registerTabsTag 挂在顶层 const CommonTags 上，
+    // typeof 守卫避免脚本未加载时抛 ReferenceError。
+    try {
+      if (typeof CommonTags !== 'undefined' && CommonTags.registerTabsTag) {
+        CommonTags.registerTabsTag();
+      }
+    } catch (e) {}
+    // 在解密内容顶部注入「重新锁定」按钮：清掉 autoSave 缓存并刷新，重新要求密码。
+    try {
+      var box = document.getElementById('hexo-blog-encrypt');
+      if (box && !box.querySelector('.hbe-relock')) {
+        var bar = document.createElement('div');
+        bar.className = 'hbe-relock-bar';
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'hbe-relock';
+        btn.textContent = '🔒 重新锁定';
+        btn.addEventListener('click', function () {
+          // 缓存键与插件一致：hbe.v4. + location.pathname + location.search
+          try { localStorage.removeItem('hbe.v4.' + location.pathname + location.search); } catch (e) {}
+          location.reload();
+        });
+        bar.appendChild(btn);
+        box.insertBefore(bar, box.firstChild);
+      }
+    } catch (e) {}
+  }
+  window.addEventListener('hexo-blog-decrypt', rehydrate);
+  document.addEventListener('hexo-blog-decrypt', rehydrate);
+})();
+</script><script>
+(function () {
+  function wire() {
+    var inp = document.getElementById('hbePass');
+    if (!inp) return;
+    var box = inp.closest('.hbe-input');
+    if (!box) return;
+    var sync = function () { box.classList.toggle('input--filled', inp.value.length > 0); };
+    inp.addEventListener('input', sync);
+    inp.addEventListener('change', sync);
+    sync();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire);
+  else wire();
+})();
+</script><script src="/js/pdf-embed.js" defer></script><!-- hexo injector body_end end --></body></html>

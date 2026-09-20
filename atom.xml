@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>clorf</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://blog.clorf.top/</id>
+  <link href="https://blog.clorf.top/" rel="alternate"/>
+  <link href="https://blog.clorf.top/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, clorf</rights>
+  <title>clorf's blog</title>
+  <updated>2026-09-20T16:39:04.230Z</updated>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="课程笔记" scheme="https://blog.clorf.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <id>https://blog.clorf.top/posts/6d5c8b63/</id>
+    <link href="https://blog.clorf.top/posts/6d5c8b63/"/>
+    <published>2023-07-01T15:51:37.000Z</published>
+    <summary>找点事干</summary>
+    <title>The Missing Semester 笔记</title>
+    <updated>2026-09-20T16:39:04.230Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="课程笔记" scheme="https://blog.clorf.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <id>https://blog.clorf.top/posts/57c5bf13/</id>
+    <link href="https://blog.clorf.top/posts/57c5bf13/"/>
+    <published>2023-04-17T20:43:41.000Z</published>
+    <summary>我是大傻逼</summary>
+    <title>数据结构 Test 2</title>
+    <updated>2026-09-20T16:39:04.236Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="课程笔记" scheme="https://blog.clorf.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <id>https://blog.clorf.top/posts/90a41cd0/</id>
+    <link href="https://blog.clorf.top/posts/90a41cd0/"/>
+    <published>2023-04-03T00:02:47.000Z</published>
+    <summary>我也不知道写啥</summary>
+    <title>数据结构 Homework 3</title>
+    <updated>2026-09-20T16:39:04.236Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="课程笔记" scheme="https://blog.clorf.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <id>https://blog.clorf.top/posts/cecceea9/</id>
+    <link href="https://blog.clorf.top/posts/cecceea9/"/>
+    <published>2023-03-30T10:57:12.000Z</published>
+    <summary>我是傻逼</summary>
+    <title>数据结构 Test 1</title>
+    <updated>2026-09-20T16:39:04.236Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="课程笔记" scheme="https://blog.clorf.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <id>https://blog.clorf.top/posts/e7a32c46/</id>
+    <link href="https://blog.clorf.top/posts/e7a32c46/"/>
+    <published>2023-03-19T23:46:18.000Z</published>
+    <summary>学不会的东西</summary>
+    <title>数据结构 Homework 2</title>
+    <updated>2026-09-20T16:39:04.236Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="课程笔记" scheme="https://blog.clorf.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <id>https://blog.clorf.top/posts/6600f62f/</id>
+    <link href="https://blog.clorf.top/posts/6600f62f/"/>
+    <published>2023-03-09T10:10:12.000Z</published>
+    <summary>幸好不计分</summary>
+    <title>数据结构 Test 0</title>
+    <updated>2026-09-20T16:39:04.236Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="课程笔记" scheme="https://blog.clorf.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <id>https://blog.clorf.top/posts/7eaa7dfc/</id>
+    <link href="https://blog.clorf.top/posts/7eaa7dfc/"/>
+    <published>2023-03-02T10:39:39.000Z</published>
+    <summary>久违的博客</summary>
+    <title>数据结构 Homework 1</title>
+    <updated>2026-09-20T16:39:04.235Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="课程笔记" scheme="https://blog.clorf.top/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    <id>https://blog.clorf.top/posts/b4b92f0d/</id>
+    <link href="https://blog.clorf.top/posts/b4b92f0d/"/>
+    <published>2022-10-02T19:06:27.000Z</published>
+    <summary>“基础算法复健”</summary>
+    <title>程序设计 Homework 1</title>
+    <updated>2026-09-20T16:39:04.237Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/2b6fb88b/</id>
+    <link href="https://blog.clorf.top/posts/2b6fb88b/"/>
+    <published>2021-04-04T11:52:29.000Z</published>
+    <summary>太菜了，摸到现在才开始做真题。</summary>
+    <title>省选真题选做</title>
+    <updated>2026-09-20T16:39:04.237Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/28c9333b/</id>
+    <link href="https://blog.clorf.top/posts/28c9333b/"/>
+    <published>2021-02-17T21:25:47.000Z</published>
+    <summary>难难难题。</summary>
+    <title>「清华集训 2017」生成树计数</title>
+    <updated>2026-09-20T16:39:04.234Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/f03871c/</id>
+    <link href="https://blog.clorf.top/posts/f03871c/"/>
+    <published>2021-02-16T22:36:31.000Z</published>
+    <summary>一道很仙的题。</summary>
+    <title>「CF838D」Airplane Arrangements</title>
+    <updated>2026-09-20T16:39:04.232Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/cb634646/</id>
+    <link href="https://blog.clorf.top/posts/cb634646/"/>
+    <published>2021-02-02T19:55:28.000Z</published>
+    <summary>一道难题。</summary>
+    <title>「HNOI2019」白兔之舞</title>
+    <updated>2026-09-20T16:39:04.232Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/663be4b7/</id>
+    <link href="https://blog.clorf.top/posts/663be4b7/"/>
+    <published>2020-12-29T20:45:45.000Z</published>
+    <summary>我就这</summary>
+    <title>NOIP2020 解析</title>
+    <updated>2026-09-20T16:39:04.228Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="随笔" scheme="https://blog.clorf.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    <id>https://blog.clorf.top/posts/f9b0635a/</id>
+    <link href="https://blog.clorf.top/posts/f9b0635a/"/>
+    <published>2020-12-07T21:06:27.000Z</published>
+    <summary>T1出题人怎么又没🐎</summary>
+    <title>NOIP2020 炸🐟记</title>
+    <updated>2026-09-20T16:39:04.227Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/b522cf3a/</id>
+    <link href="https://blog.clorf.top/posts/b522cf3a/"/>
+    <published>2020-12-01T20:32:09.000Z</published>
+    <summary>位运算的数据结构题</summary>
+    <title>「BJWC2008」序列</title>
+    <updated>2026-09-20T16:39:04.232Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/bd41e00f/</id>
+    <link href="https://blog.clorf.top/posts/bd41e00f/"/>
+    <published>2020-11-30T11:04:44.000Z</published>
+    <summary>区间编辑距离！</summary>
+    <title>「Test」打字机</title>
+    <updated>2026-09-20T16:39:04.233Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/fd97855e/</id>
+    <link href="https://blog.clorf.top/posts/fd97855e/"/>
+    <published>2020-11-27T11:58:04.000Z</published>
+    <summary>一道倍增DP计数题。</summary>
+    <title>「Test」糖果</title>
+    <updated>2026-09-20T16:39:04.234Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/c9373ef0/</id>
+    <link href="https://blog.clorf.top/posts/c9373ef0/"/>
+    <published>2020-11-26T21:24:33.000Z</published>
+    <summary>一道简单计数题。</summary>
+    <title>「Test」字符串</title>
+    <updated>2026-09-20T16:39:04.232Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="算法竞赛" scheme="https://blog.clorf.top/categories/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/"/>
+    <id>https://blog.clorf.top/posts/e376ac4e/</id>
+    <link href="https://blog.clorf.top/posts/e376ac4e/"/>
+    <published>2020-11-12T16:11:00.000Z</published>
+    <summary>T1出题人依旧没🐎</summary>
+    <title>CSP2020 解析</title>
+    <updated>2026-09-20T16:39:04.224Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>clorf</name>
+    </author>
+    <category term="随笔" scheme="https://blog.clorf.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    <id>https://blog.clorf.top/posts/a5d766e7/</id>
+    <link href="https://blog.clorf.top/posts/a5d766e7/"/>
+    <published>2020-11-08T19:04:01.000Z</published>
+    <summary>T1出题人真的没🐎</summary>
+    <title>CSP2020 退役记</title>
+    <updated>2026-09-20T16:39:04.225Z</updated>
+  </entry>
+</feed>

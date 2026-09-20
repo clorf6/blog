@@ -1,0 +1,92 @@
+/*
+ * 主题视觉微调 —— 不 fork 主题，靠站点级 CSS 覆盖。
+ *
+ * 主题的 .post-card（首页列表卡片，_components/post/post-card.styl:9）与
+ * .hty-card（文章正文容器，_components/card.styl:2）都没有设 border-radius，
+ * 所以是直角矩形。这里补上圆角。
+ */
+
+/* 首页 / 归档 / 分类 / 标签 列表里的文章卡片 */
+.post-card,
+/* 文章页正文容器 */
+.hty-card {
+  border-radius: 12px;
+}
+
+/* 卡片内首尾元素若有底色（如代码块贴边），跟着收一下角，避免溢出圆角 */
+.post-card > :first-child,
+.hty-card > :first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.post-card > :last-child,
+.hty-card > :last-child {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+/*
+ * 表格对齐统一。
+ *
+ * star-markdown-css 没给 th/td 设 text-align，于是走浏览器默认：th 居中、
+ * td 靠左 —— 同一列表头和数据错位，很难看。这里统一成左对齐（对中英文长
+ * 短内容都稳妥；若某表在 Markdown 里用 :---: 显式指定了列对齐，那会带上
+ * 内联 style，优先级更高、不受这里影响）。
+ */
+.markdown-body table th,
+.markdown-body table td {
+  text-align: left;
+}
+
+/*
+ * 侧边栏站点名换行。
+ *
+ * 移除作者名一行（head-tuning.js 删掉了 .site-author-name div）后，头像
+ * (.site-author-avatar 是 inline-block) 与站点名 (.site-name 是内联 span)
+ * 之间失去了原来那个 block 级 div 提供的换行，挤到了一行。让站点名独占一行。
+ */
+.site-info .site-name {
+  display: block;
+  margin-top: 0.6rem;
+}
+
+/*
+ * 加密文章解锁后的「重新锁定」按钮（由 scripts/decrypt-rehydrate.js 注入到
+ * 解密内容顶部）。点击后清掉 autoSave 的 localStorage 缓存并刷新，重新要求密码。
+ */
+.hbe-relock-bar {
+  text-align: right;
+  margin: 0 0 1rem;
+}
+.hbe-relock {
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--hty-secondary-text-color, #888);
+  border-radius: 2rem;
+  background: transparent;
+  color: var(--hty-secondary-text-color, #666);
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+.hbe-relock:hover {
+  opacity: 1;
+}
+
+/*
+ * 加密文章：解密后才显示评论区。
+ *
+ * 密文块里有 #hbeData（解密后整个被替换掉、#hbeData 消失），评论区 #comment
+ * 是页面靠后的独立块。用 :has() 实时判断：锁定时 #hbeData 在 → 隐藏评论；
+ * 解密后 #hbeData 没了 → :has 失配、评论自动出现；点「重新锁定」是刷新，
+ * 又带回 #hbeData → 再次隐藏，天然配合。
+ * 附带好处：giscus 的评论 iframe 是 loading="lazy" 的，藏在 display:none 里
+ * 不进视口就不会加载，等于锁定时连评论内容都不拉取，显示后才加载。
+ * :has() 现代浏览器（Chrome 105+/Safari 15.4+/Firefox 121+）均支持。
+ */
+body:has(#hbeData) #comment {
+  display: none;
+}
+
